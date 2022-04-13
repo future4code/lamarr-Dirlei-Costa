@@ -40,10 +40,10 @@ console.log(typeof  idade); //"number"
 
 alert ("Olá");
 
-let ehMaiorDeIdade = 18;
-let estudanteProgramacao = "Estudante"
-let gostaDeEsportes = "Moderadamente"
-ehMaiorDeIdade = "Sim";
+let ehMaiorDeIdade = prompt("Voce é maior de 18");
+let estudanteProgramacao = prompt("Você é estudante");
+let gostaDeEsportes = prompt("Você prática esporte");
+ehMaiorDeIdade = "Nao";
 estudanteProgramacao = "Sim";
 gostaDeEsportes = "Sim";
 
