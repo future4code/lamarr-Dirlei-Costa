@@ -39,12 +39,12 @@ imprimeIdade(2020, 1990);
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
+  let imc = peso / (altura * 2);
   // implemente sua lógica aqui
-  let peso = 70
-  let altura = 1.70
-  let imc = peso / ( altura * altura)
+  
+  return imc
 }
-calculaIMC(imc)
+  calculaIMC(imc(70, 1.73))
 
 
 // EXERCÍCIO 04
@@ -55,15 +55,14 @@ function imprimeInformacoesUsuario(nome, idade, email) {
 
 }
 
-imprimeInformacoesUsuario("Alice", 28, "alice@gmail.com" )
+imprimeInformacoesUsuario("Joao", 40, "joao@gmail.com" )
 
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
- console.log("Preto", "Branco", "Verde")
 }
-
+imprimeTresCoresFavoritas ("Preto", "Branco", "Verde")
 
 
 // EXERCÍCIO 06
@@ -87,19 +86,23 @@ console.log(total)
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-  let escreve = "vida"
-  escreve = "amor"
+  let iguias = string1, string2
+  return iguias
+  if (string1 == string2){
+    return true
+  }else{
+    return false
+  }
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-   array = ["Hello", "Word"]
-  return array
+   array  ["Hello", "Word"]
+  return array[0]
 
 }
-console.log(array[0])
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
