@@ -1,6 +1,6 @@
 //exercício - 1  interpretação de código
 
-const filme = {
+/*const filme = {
 	nome: "Auto da Compadecida", 
 	ano: 2000, 
 	elenco: [
@@ -118,4 +118,16 @@ function sacolao (frutas) {
 sacolao(frutasVerdes);
 sacolao(frutasVermelhas);
 sacolao(frutasCitricas);
-console.log(carrinho);
+console.log(carrinho);*/
+
+let igualdade = prompt("digite um numero!")
+function numerosIguais  (num1, num2 ) {
+   if(num1 == num2) {
+      console.log("Números são identicos");
+   }else {
+      console.log("Numeros se parece, mas não são identicos")
+   }
+   return igualdade
+
+}
+numerosIguais(20)
