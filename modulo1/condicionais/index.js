@@ -1,4 +1,4 @@
- // Exercícios de interpretação de código
+  // Exercícios de interpretação de código
 
 const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
@@ -11,7 +11,7 @@ if (numero % 2 === 0) {
 
 // a -  O código está dando duas  condições, caso o número digitado seja par, será um resultado, mas  se o número digitado for impar, terá outra condição.
 // b - Para números pares.
-// c - Para números impar.
+// c - Para números impares.
 
 // 2-
 
@@ -51,9 +51,9 @@ if(numero1 > 0) {
 
 console.log(mensagem) 
 
-// a -Solicitando ao usúario que digite um número.
+// a -Solicitando ao usúario que digite um número, através do comando prompt
 // b - Esse número passou no teste! Digitando o -10, terá erro, pois não esta definido valor negativos .
-// c - ????
+// c - Erro,  avariável, está no bloco local, dentro da condição if,  com isto não pode ser aceesada pelo pai.
 
 
 //Exercícios de escrita de código
@@ -122,4 +122,7 @@ if( tipoFilme === generoFilme && valorEntrada1 < 15) {
   
 }else{
    console.log("Escolha outro filme :( ")
-}
+} 
+
+// 2 - Procurando uma maneira de fazer , sem precisar usar tantos "console" logo mais entrego.
+   
