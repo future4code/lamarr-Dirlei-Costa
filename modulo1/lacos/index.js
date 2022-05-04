@@ -1,11 +1,11 @@
 //Exercícios de interpretação de código:
 
-/*let valor = 0
+let valor = 0
 for(let i = 0; i < 5; i++) {
   valor += i
 }
 console.log(valor)
-// imprime 10, pois apos incremento, a variavel soma mais 1.
+// imprime 10,  apos incremento, a variavel soma mais 1 bloco.
 
 // 2-
 
@@ -14,7 +14,7 @@ for (let numero of lista) {
   if (numero > 18) {
 		console.log(numero)
 	}
-} */
+} 
 // a- Vai imprimir um array acima do 19, 21, 23, 25, 27, 30.
 // b - Sim. chama no console a variavel lista e selecionao indice que deseja .
 //3 - A cada linha impressa com asterisco, vai incrementado mais 1 asterisco por linha, com um total de 4 linhas.
