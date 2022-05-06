@@ -1,5 +1,6 @@
 //Exercícios de interpretação de código:
-const usuarios = [
+
+ const usuarios = [
    { nome: "Amanda Rangel", apelido: "Mandi" },
    { nome: "Laís Petra", apelido: "Laura" },
    { nome: "Letícia Chijo", apelido: "Chijo" }
@@ -34,10 +35,9 @@ const pets = [
    { nome: "Caramelo", raca: "Vira-lata"},
 ]
 
+
 const listaDeDogs = pets.map(dog =>dogs.nome)
 console.log(listaDeDogs)
-
-
 
 
 //b-
@@ -45,8 +45,7 @@ const soSalsichas = pets.filter(salsixinha=>salsixinha.raca ==="Salsicha")
 console.log(soSalsichas) ;
 
 
- 
-  //c-
+//c-
 const paraPoodles = pets.filter(desconto=>desconto.raca === "Poodle")
       
 console.log(paraPoodles)
@@ -73,16 +72,49 @@ const produtos = [
 const feira = produtos.map(lista =>lista.nome)
 console.log(feira) 
 
-// b.
+// **** b.
 //const precoFeira = produtos.filter(lista => lista.produtos)
 
 // c.
  const bebidas = produtos.filter(bebida => bebida.categoria === 'Bebidas' )
-console.log(bebidas)
+console.log(bebidas) 
+
+// d.
+const soYpe = produtos.filter((item) => {
+   return  item.nome.includes('Y')
+})
+
+console.log(soYpe);
 
 
-const soQueroYpe = produtos.filter(ype => ype.nome === '')
-console.log(soQueroYpe)
+// e.****
+
+//Desafios
+
+//a.
+const pokemons = [
+   { nome: "Bulbasaur", tipo: "grama" },
+   { nome: "Bellsprout", tipo: "grama" },
+   { nome: "Charmander", tipo: "fogo" },
+   { nome: "Vulpix", tipo: "fogo" },
+   { nome: "Squirtle", tipo: "água" },
+   { nome: "Psyduck", tipo: "água" },
+]
+ 
+ const sorted = pokemons.sort((a,b )=>{
+   return a.nome.localeCompare(b.nome)
+})
+console.log(sorted)
+ 
+
+
+
+
+
+
+
+
+
 
 
 
