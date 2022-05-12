@@ -24,28 +24,58 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
+   let retorno = array.filter(pares => (pares % 2 ) == 0 )
+   return retorno
 
 }
 
 // EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {
+/* function retornaNumerosParesElevadosADois(array) {
+   let numElevado =array.filter(pares => (pares  % 2 )  == 0) 
+   return  Math.pow(pares, 2) 
  
-}
+ 
+}*/
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+   let devolMaiorNum = 0
+   for(let numArr of array){
+      if(numArr > devolMaiorNum){
+         devolMaiorNum = numArr
+      }
+   }
+  return devolMaiorNum
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+   const obj = 
+      {
+         maiorNumero:  num1,
+         maiorDivisivelPorMenor: true,
+         diferenca: num2
+      }
 
-}
+   if(maiorNumero / diferenca === maiorDivisivelPorMenor)
+
+           return obj.maiorNumero +30 + obj.maiorDivisivelPorMenor + true +obj.diferenca +15
+ }
+
+
 
 // EXERCÍCIO 08
-function retornaNPrimeirosPares(n) {
-   
-} 
+/* function retornaNPrimeirosPares(n) {
+   let numPares = [];
+    for (let i = 0; numPares.length < n; i ++) {
+        if (i % 2 == 0) {
+            numPares.push(i)
+        }
+    }
+    return numPares;
+
+    
+} */
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
