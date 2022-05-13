@@ -30,12 +30,12 @@ function retornaNumerosPares(array) {
 }
 
 // EXERCÍCIO 05
-/* function retornaNumerosParesElevadosADois(array) {
-   let numElevado =array.filter(pares => (pares  % 2 )  == 0) 
-   return  Math.pow(pares, 2) 
+ function retornaNumerosParesElevadosADois(array) {
+   let numElevado =array.filter(pares => (pares  % 2 )  === 0) 
+  let novoArray = numElevado.map(pares =>(Math.pow(pares, 2 )))
+  return novoArray
  
- 
-}*/
+}
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
@@ -49,23 +49,45 @@ function retornaMaiorNumero(array) {
 }
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {
-   const obj = 
-      {
-         maiorNumero:  num1,
-         maiorDivisivelPorMenor: true,
-         diferenca: num2
-      }
+ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
-   if(maiorNumero / diferenca === maiorDivisivelPorMenor)
+   let devolMaior 
+   let devMenorNum
+   let ehdivisivel 
 
-           return obj.maiorNumero +30 + obj.maiorDivisivelPorMenor + true +obj.diferenca +15
- }
+   if(num1 > num2) {
+      devolMaior = num1
+
+   devMenorNum = num2
+   }else{
+      devolMaior = num2
+
+      devMenorNum = num1
+   }
+   if(devolMaior % devMenorNum === 0) {
+      ehdivisivel = true
+   }else{
+      ehdivisivel = false
+
+   }
+   let diferenca  = devolMaior -devMenorNum
+
+   let obj = {
+      maiorNumero: devolMaior,
+      maiorDivisivelPorMenor: ehdivisivel,
+      diferenca: diferenca 
+
+   }
+   return obj
+
+
+
+ } 
 
 
 
 // EXERCÍCIO 08
-/* function retornaNPrimeirosPares(n) {
+function retornaNPrimeirosPares(n) {
    let numPares = [];
     for (let i = 0; numPares.length < n; i ++) {
         if (i % 2 == 0) {
@@ -75,7 +97,7 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
     return numPares;
 
     
-} */
+} 
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
@@ -125,10 +147,20 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+   
+    
+   const ordemNome = consultas.sort((a , b) => {
+      return a.nome.localeCompare(b.nome)
+   })
+   return ordemNome
 }
 
 // EXERCÍCIO 15B
-function retornaArrayOrdenadoPorData(consultas) {
+/* function retornaArrayOrdenadoPorData(consultas) {
+
+   const ordemData = consultas.sort((a , b) => {
+      return a.dataDaConsulta - b.dataDaConsulta
+   })
+   return ordemData
    
-} 
+}   */
