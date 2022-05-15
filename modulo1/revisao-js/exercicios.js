@@ -24,7 +24,7 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-   let retorno = array.filter(pares => (pares % 2 ) == 0 )
+   let retorno = array.filter(pares => (pares % 2 )=== 0 )
    return retorno
 
 }
@@ -32,8 +32,8 @@ function retornaNumerosPares(array) {
 // EXERCÍCIO 05
  function retornaNumerosParesElevadosADois(array) {
    let numElevado =array.filter(pares => (pares  % 2 )  === 0) 
-  let novoArray = numElevado.map(pares =>(Math.pow(pares, 2 )))
-  return novoArray
+   let novoArray = numElevado.map(pares =>(Math.pow(pares, 2 )))
+   return novoArray
  
 }
 
@@ -76,13 +76,9 @@ function retornaMaiorNumero(array) {
       maiorNumero: devolMaior,
       maiorDivisivelPorMenor: ehdivisivel,
       diferenca: diferenca 
-
    }
    return obj
-
-
-
- } 
+} 
 
 
 
@@ -117,27 +113,56 @@ if ( tr1 < (tr2 + tr3) && tr2 < (tr1 + tr3) && tr3 < (tr1 + tr2)){
 
 // EXERCÍCIO 10
  function retornaSegundoMaiorESegundoMenor(array) {
-  
+
 }
+  
+
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+
+   return  (`Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`)
+
+
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+  const novoObj = {
+     ...pessoa,
+     nome: "ANÔNIMO"
+   }
+  return novoObj
+  
+
 }
 
 // EXERCÍCIO 13A
-function retornaPessoasAutorizadas(pessoas) {
+ function retornaPessoasAutorizadas(pessoas) {
+   let pessoasPermitidas = pessoas
+
+      for (let pessoa of pessoas) {
+        if( pessoa.idade >= 14 && pessoa.altura >= 15 && pessoa.idade < 60){
+           pessoasPermitidas.push(pessoa)
+
+        }
+        return pessoasPermitidas
+      }
+  
    
-}
+} 
+
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+   const naoAutorizada = pessoas
+   for(let pessoa of pessoas){
+      if(pessoa.idade < 14 || pessoa.altura < 15 || pessoa.idade > 60) {
+         naoAutorizada.push(pessoa)
+      }
+   }
+   return naoAutorizada
+
 }
 
 // EXERCÍCIO 14
@@ -147,8 +172,6 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-   
-    
    const ordemNome = consultas.sort((a , b) => {
       return a.nome.localeCompare(b.nome)
    })
@@ -156,11 +179,11 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 }
 
 // EXERCÍCIO 15B
-/* function retornaArrayOrdenadoPorData(consultas) {
+ function retornaArrayOrdenadoPorData(consultas) {
 
    const ordemData = consultas.sort((a , b) => {
       return a.dataDaConsulta - b.dataDaConsulta
    })
    return ordemData
    
-}   */
+}   
