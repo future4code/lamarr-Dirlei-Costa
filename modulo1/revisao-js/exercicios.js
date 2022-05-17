@@ -19,7 +19,7 @@ function retornaArrayInvertido(array) {
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
   let ordenaArray = array.sort((a, b) => a-b)
-  return ordenaArray
+  return ordenaArray 
 }
 
 // EXERCÍCIO 04
@@ -33,7 +33,7 @@ function retornaNumerosPares(array) {
  function retornaNumerosParesElevadosADois(array) {
    let numElevado =array.filter(pares => (pares  % 2 )  === 0) 
    let novoArray = numElevado.map(pares =>(Math.pow(pares, 2 )))
-   return novoArray
+   return novoArray 
  
 }
 
