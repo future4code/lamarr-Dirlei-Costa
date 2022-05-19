@@ -113,6 +113,11 @@ if ( tr1 < (tr2 + tr3) && tr2 < (tr1 + tr3) && tr3 < (tr1 + tr2)){
 
 // EXERCÍCIO 10
  function retornaSegundoMaiorESegundoMenor(array) {
+    const ordenado = arrayOrdenado(array)
+    const segundoMaior = ordenado[ordenado.length - 2]
+    const segundoMenor = ordenado[1]
+    f
+    return[segundoMaior, segundoMenor]
 
 }
   
@@ -120,8 +125,16 @@ if ( tr1 < (tr2 + tr3) && tr2 < (tr1 + tr3) && tr3 < (tr1 + tr2)){
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
+   let textAtores = ""
 
-   return  (`Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`)
+   for (let a of filme.atores){
+      textAtores += a + ","
+
+   }
+   const finalSemVirgula = textAtores.slice(0, -2)
+
+
+   return  `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${finalSemVirgula}`
 
 
 }
@@ -139,36 +152,43 @@ function retornaPessoaAnonimizada(pessoa) {
 
 // EXERCÍCIO 13A
  function retornaPessoasAutorizadas(pessoas) {
-   let pessoasPermitidas = pessoas
+   let pessoasPermitidas = pessoas.filter((pessoa) => {
 
-      for (let pessoa of pessoas) {
-        if( pessoa.idade >= 14 && pessoa.altura >= 15 && pessoa.idade < 60){
-           pessoasPermitidas.push(pessoa)
-
-        }
-        return pessoasPermitidas
-      }
+      return pessoa.altura>=1.5 && pessoa.idade > 14 && pessoa.idade < 60
+      })
+      return pessoasPermitidas
   
    
-} 
+   }
 
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-   const naoAutorizada = pessoas
-   for(let pessoa of pessoas){
-      if(pessoa.idade < 14 || pessoa.altura < 15 || pessoa.idade > 60) {
-         naoAutorizada.push(pessoa)
-      }
-   }
+   const naoAutorizada = pessoas.filter((pessoa) => {
+
+      return pessoa.altura < 1.5 || pessoa.idade <= 14 || pessoa.idade >= 60
+   })
    return naoAutorizada
 
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+   contas.forEach((conta) => {
+      let totalCompras = 0
+      conta.compras.forEach((item) => {
+         totalCompras += item
+      })
+      conta.saldoTotal -= totalCompras;
+      conta.compras = [];
 
-}
+
+   })
+   return contas
+
+   }
+
+
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
