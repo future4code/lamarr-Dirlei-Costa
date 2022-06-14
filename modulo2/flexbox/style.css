@@ -4,6 +4,7 @@
 }
 
 body{
+   font-family: arial;
    min-height: 100vh;
    display: grid;
    grid-template-columns: 300px 1fr; /*dividindo as colunas * 300px do menu navegação e o restante 1fr  ||*/
