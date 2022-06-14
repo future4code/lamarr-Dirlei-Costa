@@ -2,16 +2,37 @@
    margin: 0;
    padding: 0;
 }
-.cabecario {
+
+body{
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 300px 1fr; /*dividindo as colunas * 300px do menu navegação e o restante 1fr  ||*/
+   grid-template-rows: 60px 1fr 60px; /*dividindo as linhas *60px do cabeçario e do rodape 1fr é o que sobrou ===*/
+   
+}
+
+header{
    display: flex;
    justify-content:space-between;
    background-color:mediumvioletred;
    align-items: center;
+   height: 60px;
+   padding: 0 20px;
+   grid-column: 1/-1; /* vai do inicio ao fim*/
 }
 
-.icon-logo {
+.text_icon{
+   display: flex;
+   align-items: center;
+   padding: 10px 0;
+}
+
+
+.icon {
+   height: 20px;
+   margin-right: 10px;
    width: 20px;
-   margin: 30px;
+   color: black;
 }
 
 button {
@@ -20,77 +41,53 @@ button {
    padding: 1px 5px;
 }
 
-
-#head {
-   flex-grow: 2;
-}
-
-
-.container {
-   display: flex;
-   flex-direction: column;
-   width: 300px;
-   height: 100%;
-   background-color: #f2d0e0;
+nav{
+   
+   background:#f2d0e0;
    padding: 10px;
-
-}
-
-.seta {
-   width: 20px;
-   margin-left: 90%; 
+   width: 200px ;
   
 
 }
 
-.icon {
-   width: 20px;
-
-
-}
-
-.navegacao{
-   text-transform: uppercase;
-   font-weight: bold;
+nav a{
    text-decoration: none;
-   padding:  0 20px;
-   margin: 100% 0;
+   font-weight: bold;
+   color:black;
 }
 
-.produto {
+.btn_navegar{
    display: flex;
-   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
 
 }
 
-
-.card {
-   margin: 10px;
-   background: #f5f5f2;
-
-   
+main{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   row-gap: 30px;
+   column-gap: 30px;
+   margin: 20px;
 }
 
-.card img {
-   width: 300px;
-   
-
-}
-
-
-h3 {
-   text-align: center;
-   padding:10px;
-
-}
-
-p {
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 3px 3px 5px darkgray;
    text-align: center;
 }
 
+.img_cards{
+   width: 100%;
 
+}
 .rodape {
    text-align: center;
    background-color:#c71585;
    padding: 15px;
+   grid-column: 1/-1;
+
 }
