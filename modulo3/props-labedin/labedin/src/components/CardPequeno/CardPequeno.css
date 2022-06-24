@@ -3,16 +3,18 @@
    align-items: center;
    border: 1px solid black;
    padding: 20px 10px;
-   margin-bottom: 10px;
-   height: 200px;
+   margin: 10px 25px;
+   letter-spacing: 2px;
 }
 
 .smallcard-container img{
-   width: 70px;
-   margin-right: 10px;
+   width: 50px;
+   height: 40px;
+   margin-right: 20px;
 }
 
 .smallcard-container div{
    display: flex;
-   justify-items:center;
+   margin-right: 130px;
+   
 }
