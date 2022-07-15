@@ -16,8 +16,8 @@ const App = () => {
 
   const handleTask = (taskTitle, nameTitulo) => {
     const newName = [...name,{
-      titulo:taskTitle,
       id:nameTitulo,
+      titulo:taskTitle,
     }]
 
     setName(newName)

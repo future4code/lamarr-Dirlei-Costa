@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Btn from './Btn';
 import './AddEvent.css';
 
 
@@ -34,9 +33,7 @@ const AddEvent = ({handleTask}) => {
            <input onChange={hadleMensagem} value={mensager} className='add_input' type="text"
            placeholder='Digite a mensagem:'/>
 
-           <div className="add_btn__button">
-           <Btn onClick={handleAddClick}>Enviar</Btn>
-           </div>
+           <button onClick={handleAddClick}>Enviar</button>
 
       </div>
    );
