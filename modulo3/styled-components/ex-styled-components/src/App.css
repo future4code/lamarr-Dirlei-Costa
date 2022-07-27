@@ -1,0 +1,12 @@
+.main{
+  display:flex;
+  align-items: flex-end;
+  gap:10px;
+  margin:20px 10px;
+
+
+}
+
+.input_msg{
+  flex-grow:.5;
+}
