@@ -1,9 +1,59 @@
-.container{
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 2px solid greenyellow;
-  padding: 10px;
-  border-radius: 10px;
+.App {
+  margin-top:10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.App-header {
+ 
+  background-color:#ffe3b8;
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  
+
+}
+
+form p{
+  display: flex;
+  text-align: left;
+  margin: 10px;
+ 
+}
+
+  
+
+form input{
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  justify-content: left;
+ 
+}
+
+
+form input:nth-child(2){
+  width:70px;
+  margin: 0 0 0 5px;
+  /* font-weight: bold; */
+
+
+
+}
+
+form button{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  font-weight: bold;
+  border: none;
+  margin-right: 5px;
+}
+
+.input-msg{
+  width: 200p
 }

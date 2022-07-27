@@ -1,42 +1,13 @@
-import React, { useState } from 'react';
 import './App.css';
-import Eventos from './components/Eventos'
-import AddEvent from './components/AddEvent';
+import Exer1 from './components/Exer1';
 
-const App = () => {
-
-  const [name,setName] = useState([
-    {
-      id: 'nome',
-      titulo: 'mensagem'
-
-    },
-   
-  ])
-
-  const handleTask = (taskTitle, nameTitulo) => {
-    const newName = [...name,{
-      id:nameTitulo,
-      titulo:taskTitle,
-    }]
-
-    setName(newName)
-    console.log(newName);
-
-
-  }
-
-
+function App() {
   return (
-    <>
-    <div className='container'>
-    <Eventos name={name}/>
-    <AddEvent handleTask={handleTask}/>
-
+    <div className="App">
+      <header className="App-header">
+      <Exer1/>
+      </header>
     </div>
-
-    </>
-
   );
 }
 
