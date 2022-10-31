@@ -4,14 +4,7 @@
   "description": "desenvolvimento com node/express",
   "main": "index.js",
   "scripts": {
-    "exercicio1": "tsc && node ./build/index",
-    "exercicio2": "tsc && node ./build/index",
-    "exercicio3": "tsc && node ./build/index",
-    "exercicio4": "tsc && node ./build/index",
-    "exercicio5": "tsc && node ./build/index",
-    "exercicio6": "tsc && node ./build/index",
-    "exercicio7": "tsc && node ./build/index",
-    "exercicio8": "tsc && node ./build/index",
+    "start": "tsc && node ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Costa",
