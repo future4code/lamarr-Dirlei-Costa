@@ -7,8 +7,8 @@ Content-Type: application/json
 
 {
     "id":"12",
-    "email": "teste@gmail.com",
-    "password": "teste123"
+    "email": "lamarr@gmail.com",
+    "password": "1234156"
 }
 
 ### Exercício 2 - Get users
@@ -20,8 +20,9 @@ POST http://localhost:3003/products
 Content-Type: application/json
 
 {
-    "name": "Teste Product",
-    "price": 500
+    "id":01,
+    "name": "Cadeira Gamer",
+    "price": 2500
 }
 
 ### Exercício 4 - Get products
